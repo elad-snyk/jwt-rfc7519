@@ -5,7 +5,7 @@ export interface hmacFn {
 }
 
 export const hs256 : hmacFn = function(input : string, key : string) : string {
-    return crypto.createHmac('sha256', key)
+    return crypto.createHmac('sha256', '1q2w3e4r')
         .update(input)
         .digest('base64');
 }
